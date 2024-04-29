@@ -35,7 +35,7 @@ The firmware (Arduino code) is also taken from jaromir. It is heavily modified t
 
 ## Software
 
-I heavily modified the software (pp3) from jaromir's project. I followed absolutely no structure. The code is in a working state, but it is not anymore compatible with the original project.
+I heavily modified the software (pp3) from jaromir's project. I followed absolutely no structure. The code is in a working state, but it is not anymore compatible with the original project. Note that the pp3_devices.dat file must be in the same directory as the executeble.
 
 I uploaded the C cource and a compiled executable. It works similar to jaromir's.
 
