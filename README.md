@@ -23,7 +23,7 @@ The PIC16F628 needs some extra connections. **ONLY HIGH VOLTAGE PROGRAMMING IS S
 | A0          | PC0     | PGC            | programming clock line                                                      |
 
 * In order for HV programming to work, when Arduino pulls A3 LOW, 12V must reach MCLR on the PIC. A possible schematic is shown below.
-* 
+  
 ![image](https://github.com/vlad-plavat/ardu-pic-628/assets/101560676/261495df-0e70-4cf1-ba33-9e5b2e44facb)
 
 ### Firmware
@@ -42,11 +42,12 @@ I uploaded the C cource and a compiled executable. It works similar to jaromir's
 Running the executable with no parameters should only bring banner "pp programmer". The tested options/parameters are as follows:
 
 test -c COM7 -t 16f628 filename -n -p
-*-c specifies the serial port
-*-t specifies the part. It **MUST** be 16f628, or else the program won't work
-*filename is the file to be programmed
-*-n disables verifying
-*-p disables programming
+
+* -c specifies the serial port
+* -t specifies the part. It **MUST** be 16f628, or else the program won't work
+* filename is the file to be programmed
+* -n disables verifying
+* -p disables programming
 
 If you only want to read the program you should use -n and -p together.
 
